@@ -5,5 +5,3 @@ content = file.read()
 for line in content:
     print(line)
 
-file.close()
-
