@@ -1,0 +1,477 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="9f0e7fc6-21b3-4acd-a7ca-c92bb39d015e" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Adventure Works2014</ID>
+  <Name>Adventure Works2014</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="2e3eddaf-3fcb-4b5b-a396-53972a6ed93e">
+      <ID>Sales Order Header</ID>
+      <Name>Sales Order Header</Name>
+      <DimensionID>Sales Order Header</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="13aa4b74-266e-40bc-9f95-d632681db68b">
+          <AttributeID>Sales Order ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="52f143b5-586c-4c51-8667-6df1e3796262">
+          <AttributeID>Customer ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6790882c-5c8c-4a0f-843b-1f71837b857e">
+          <AttributeID>Ship To Address ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7ee06e38-b382-4cd4-a4d5-aa274b9e6e18">
+          <AttributeID>Credit Card ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5a1da1c4-d507-4478-abbc-8df6beb8ef7a">
+          <AttributeID>Ship Method ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d43ca928-6299-43fa-81e5-8528e60f1f5b">
+          <AttributeID>Sales Person ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f077cff4-c354-4906-9aa4-d4f297463638">
+          <AttributeID>Bill To Address ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="085e9194-e468-4ca5-9b6c-32916b2bee0b">
+          <AttributeID>Territory ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a9885998-0a75-4f12-b285-a3793827bb2d">
+          <AttributeID>Currency Rate ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="c4492373-25d5-4d15-9829-857b687e2d2c">
+      <ID>Customer</ID>
+      <Name>Customer</Name>
+      <DimensionID>Customer</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="ec579461-1100-4efd-a7da-2686a4f6b6b9">
+          <AttributeID>Customer ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1da29f6e-d0ef-4e43-ab97-675fee654824">
+          <AttributeID>Territory ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="4e1483dd-a651-468b-8766-726e41f099ac">
+      <ID>Ship To Address</ID>
+      <Name>Ship To Address</Name>
+      <DimensionID>Address</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="85ca91b8-40cb-4ca9-a8df-d14315fec693">
+          <AttributeID>Address ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="d88d3e41-b9ea-4cb1-8532-a6d653a24374">
+      <ID>Credit Card</ID>
+      <Name>Credit Card</Name>
+      <DimensionID>Credit Card</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="f4b89891-d628-42a0-af5c-4363958a2d8e">
+          <AttributeID>Credit Card ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="2b368672-6380-43a7-bb33-38b301ba9459">
+      <ID>Ship Method</ID>
+      <Name>Ship Method</Name>
+      <DimensionID>Ship Method</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="241513ff-e079-486f-a3dc-1785b9e34da9">
+          <AttributeID>Ship Method ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="ca135660-3ce6-4df4-9d57-c35892e428d0">
+      <ID>Sales Person</ID>
+      <Name>Sales Person</Name>
+      <DimensionID>Sales Person</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="ec3625f8-cbd3-40fa-a28f-713187c264d6">
+          <AttributeID>Business Entity ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="421f5980-c086-4798-8a5c-dbdc40e92acb">
+          <AttributeID>Territory ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="be9e77fc-7988-4ebf-a730-5159bb20cc52">
+      <ID>Bill To Address</ID>
+      <Name>Bill To Address</Name>
+      <DimensionID>Address</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="8e1d0015-ae7c-4a80-bde0-920f2cd7054a">
+          <AttributeID>Address ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="e9377b01-1040-4efd-bb30-15f1f4d2f709">
+      <ID>Sales Territory</ID>
+      <Name>Sales Territory</Name>
+      <DimensionID>Sales Territory</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="8f1758d2-5a22-451a-a759-26421817dbab">
+          <AttributeID>Territory ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="f74984a8-0ad1-4025-bb70-5e79778c32ef">
+      <ID>Currency Rate</ID>
+      <Name>Currency Rate</Name>
+      <DimensionID>Currency Rate</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="ad8b7f9d-0f5b-44b1-8234-48c539d757d3">
+          <AttributeID>Currency Rate ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="1290a2a4-6442-4300-b3b0-2061cef33a2b">
+      <ID>Customer - Territory</ID>
+      <Name>Customer - Territory</Name>
+      <DimensionID>Sales Territory</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="7c93c976-0093-41c4-a720-43bd5b5b0218">
+          <AttributeID>Territory ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="497c6f45-4dd2-46c8-9586-9ac87a6ca333">
+      <ID>Sales Person - Territory</ID>
+      <Name>Sales Person - Territory</Name>
+      <DimensionID>Sales Territory</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="8ac4d5d3-2138-49a3-a904-875d3ccae6d6">
+          <AttributeID>Territory ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="29ff4987-6963-46b4-9400-255114985eb0">
+      <ID>Sales Order Header</ID>
+      <Name>Sales Order Header</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="cf0a451e-8936-4f52-aa6f-1c54fc5c2348">
+          <ID>Revision Number</ID>
+          <Name>Revision Number</Name>
+          <Source dwd:design-time-name="9f4b7c91-3680-4004-8936-0e3087e0e914">
+            <DataType>UnsignedInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="cc003577-9193-4f75-a1a6-4a7fe2b13488">
+              <TableID>Sales_SalesOrderHeader</TableID>
+              <ColumnID>RevisionNumber</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="8ee600a5-f0aa-4dca-8ad4-6f672e6730e2">
+          <ID>Status</ID>
+          <Name>Status</Name>
+          <Source dwd:design-time-name="567a4c29-a132-42eb-8fc6-47fa4362e3b9">
+            <DataType>UnsignedInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="3b1605aa-ea7d-4ae9-973c-4e28ba90e4c0">
+              <TableID>Sales_SalesOrderHeader</TableID>
+              <ColumnID>Status</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="5a5b6543-8993-481c-82f8-aa7859e6d284">
+          <ID>Sub Total</ID>
+          <Name>Sub Total</Name>
+          <Source dwd:design-time-name="a10d44e5-30a9-4079-9c38-9b40cc842997">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="1165f76c-b99e-4a56-87fd-6e943d51ece6">
+              <TableID>Sales_SalesOrderHeader</TableID>
+              <ColumnID>SubTotal</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="4e73ddea-b2a2-4469-879f-1c3e6fb658da">
+          <ID>Tax Amt</ID>
+          <Name>Tax Amt</Name>
+          <Source dwd:design-time-name="bc2fc178-f081-4f8d-8873-c825795721c6">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="179403d9-9f98-49b9-85b1-ac25bfb35ac2">
+              <TableID>Sales_SalesOrderHeader</TableID>
+              <ColumnID>TaxAmt</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="7acb49a8-eedc-4a1d-a472-86c183d8d4ef">
+          <ID>Freight</ID>
+          <Name>Freight</Name>
+          <Source dwd:design-time-name="c5690098-6801-48ba-807d-b3fae7760625">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="8fd1fe53-821e-4b98-b646-4122712a040c">
+              <TableID>Sales_SalesOrderHeader</TableID>
+              <ColumnID>Freight</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="446ebbaa-1a7f-4247-9145-24b32cdee48c">
+          <ID>Total Due</ID>
+          <Name>Total Due</Name>
+          <Source dwd:design-time-name="1a807fb8-220a-4fa0-9092-a9781b4919f1">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="80954a45-c42e-433a-8f5c-7d5ef4a66f17">
+              <TableID>Sales_SalesOrderHeader</TableID>
+              <ColumnID>TotalDue</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="dfe0f644-21de-4d14-ba66-8ef1661de28a">
+          <ID>Sales Order Header Count</ID>
+          <Name>Sales Order Header Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="0479cf49-3892-47d3-b51f-8da5b7b0cbae">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="164827e8-e87c-4f65-99c7-872b66e32dc7">
+              <TableID>Sales_SalesOrderHeader</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="fb540e8d-e204-49c0-923b-6df2045bc0a6">
+          <CubeDimensionID>Sales Order Header</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="818ab903-c0fb-4a22-a9dd-e3a937332203">
+              <AttributeID>Sales Order ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="0c1616e0-edb4-4d92-bef0-499caccb8d30">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a4875a2d-52f7-4907-a55b-f9aa75cbfe53">
+                    <TableID>Sales_SalesOrderHeader</TableID>
+                    <ColumnID>SalesOrderID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="1a67049f-731d-460f-86e5-2def47e0be82">
+          <CubeDimensionID>Customer</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="05beb2d5-0440-4405-9ce3-778b6c7b53f4">
+              <AttributeID>Customer ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="d5e54d92-22b7-405f-802b-a76f30bf2e9f">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6cddb805-2dff-47f7-b79b-5a2cac01091f">
+                    <TableID>Sales_SalesOrderHeader</TableID>
+                    <ColumnID>CustomerID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="0a021061-edfa-431b-b241-a10593315f3a">
+          <CubeDimensionID>Ship To Address</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="314a531a-851b-4daa-94b9-5873c0b864bd">
+              <AttributeID>Address ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="18facb62-9e05-49bb-9b61-d3695d76837f">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="fa060d98-6d72-46aa-b4f8-b92875fbf94f">
+                    <TableID>Sales_SalesOrderHeader</TableID>
+                    <ColumnID>ShipToAddressID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="e86443b3-e136-4f43-ab60-a3d3b7aa56a5">
+          <CubeDimensionID>Credit Card</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="2093dc06-4efb-48fc-8d8b-079e13f1967a">
+              <AttributeID>Credit Card ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="81d95617-f4cb-4670-b616-0cdb6fff811d">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="53998bb5-e181-4a15-8204-09e614b827e8">
+                    <TableID>Sales_SalesOrderHeader</TableID>
+                    <ColumnID>CreditCardID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="5d3fc05a-b7b9-428b-9d64-40f23121c148">
+          <CubeDimensionID>Ship Method</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="b66c36ef-a175-47ed-802c-986c439a4e44">
+              <AttributeID>Ship Method ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="76ae8bb1-eb8a-4927-a088-038f229bdf81">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="0ac14dd2-1e76-48a1-bbf7-af294346183c">
+                    <TableID>Sales_SalesOrderHeader</TableID>
+                    <ColumnID>ShipMethodID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="ccbb282e-bf57-4abb-90c1-36260431d7e5">
+          <CubeDimensionID>Sales Person</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="49d9078d-cc78-41cf-8eac-c4e77419ba1e">
+              <AttributeID>Business Entity ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="22712e4b-0828-469c-984c-2cc4254a3e18">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="13e0746f-726c-469d-9333-bd079ffb85de">
+                    <TableID>Sales_SalesOrderHeader</TableID>
+                    <ColumnID>SalesPersonID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="fc6448b3-e326-4905-a4ee-544cd2e5a33b">
+          <CubeDimensionID>Bill To Address</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="79cfb033-0886-4619-bed6-013310404dbd">
+              <AttributeID>Address ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="3978ccd7-6464-4950-872a-8cb23665dadc">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="4256a7e3-5280-4ad4-ada1-d9568fce647f">
+                    <TableID>Sales_SalesOrderHeader</TableID>
+                    <ColumnID>BillToAddressID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="645a7dc1-4641-4cf6-b496-82cc40465128">
+          <CubeDimensionID>Sales Territory</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="3b282d28-e84d-462e-8603-3bf029204be2">
+              <AttributeID>Territory ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="075ff3fa-0241-4bbc-b1bb-8f0d3c472f11">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f2f35711-21d8-4593-9cc1-5e993e1cacad">
+                    <TableID>Sales_SalesOrderHeader</TableID>
+                    <ColumnID>TerritoryID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="70cfe504-86ea-4426-867c-6a25993fbba0">
+          <CubeDimensionID>Currency Rate</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="6016d9fa-d8ed-4eb1-bfad-dbe8d7744d46">
+              <AttributeID>Currency Rate ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="da834c8f-3d35-45f5-931e-a4771678ec66">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="4ab01825-bd79-454b-9ad3-c1410d56f7e4">
+                    <TableID>Sales_SalesOrderHeader</TableID>
+                    <ColumnID>CurrencyRateID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="3639dd70-2dc7-4dee-857d-49e1b17d45a7">
+          <CubeDimensionID>Customer - Territory</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="36d5efb8-6c88-40db-8686-96309aec3ea6">
+              <AttributeID>Territory ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Customer</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Territory ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="b1e69b69-6c2c-4e00-b282-38d76239bb22">
+          <CubeDimensionID>Sales Person - Territory</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="03a98346-7c6d-4056-8f07-0506c34ac5d0">
+              <AttributeID>Territory ID</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Sales Person</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Territory ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="27cb773d-2b60-451f-8fd9-d308ee6d12c4">
+    <DataSourceViewID>Adventure Works2014</DataSourceViewID>
+  </Source>
+</Cube>

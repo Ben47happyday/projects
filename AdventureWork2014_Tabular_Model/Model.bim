@@ -1,0 +1,27 @@
+{
+  "name": "SemanticModel",
+  "compatibilityLevel": 1200,
+  "model": {
+    "culture": "en-AU",
+    "dataSources": [
+      {
+        "name": "SqlServer LAPTOP-2KUUG38IManteaudev AdventureWorks2014",
+        "connectionString": "Provider=SQLNCLI11;Data Source=LAPTOP-2KUUG38I\\Manteaudev;Initial Catalog=AdventureWorks2014;Integrated Security=SSPI;Persist Security Info=false",
+        "impersonationMode": "impersonateServiceAccount",
+        "annotations": [
+          {
+            "name": "ConnectionEditUISource",
+            "value": "SqlServer"
+          }
+        ]
+      }
+    ],
+    "annotations": [
+      {
+        "name": "ClientCompatibilityLevel",
+        "value": "400"
+      }
+    ]
+  },
+  "id": "SemanticModel"
+}
