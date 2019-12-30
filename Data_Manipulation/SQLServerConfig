@@ -1,0 +1,8 @@
+{
+  "SQLServer": {
+    "Driver":"{SQL Server}",
+    "Server":"LAPTOP-2KUUG38I\\Manteaudev",
+    "Database":"AdventureWorks2014",
+    "Trusted_Connection":"yes"
+  }
+}

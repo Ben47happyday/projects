@@ -1,15 +1,28 @@
 import pyodbc
 import pandas
 import numpy
+import json
+
+configfile = 'SQLServerConfig'
+
+json_file = open(configfile)
+
+data = json.load(json_file)
+
+ConnectionString = F"Driver={data['SQLServer']['Driver']}" \
+                   F";Server={data['SQLServer']['Server']}" \
+                   F";Database={data['SQLServer']['Database']}" \
+                   F";Trusted_Connection={data['SQLServer']['Trusted_Connection']}"
+print(ConnectionString)
 
 def header(x):
     return print(f'[{x}]')
 
+
 def f_conn():
-    return pyodbc.connect('Driver={SQL Server};'
-                      'Server=LAPTOP-2KUUG38I\Manteaudev;'
-                      'Database=AdventureWorks2014;'
-                      'Trusted_Connection=yes;')
+    return pyodbc.connect(ConnectionString)
+
+
 pd = pandas
 conn = f_conn()
 
